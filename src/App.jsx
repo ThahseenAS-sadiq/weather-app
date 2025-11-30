@@ -217,7 +217,7 @@ function App() {
 
                 {/* ---------------- STATS ROW 1 ---------------- */}
                 <div className="flex flex-wrap justify-around mt-6 text-xl">
-                  {[ 
+                  {[
                     [HumidityIcon, "Humidity", `${weather.main.humidity}% (${getHumidityValue(weather.main.humidity)})`],
                     [WindIcon, "Wind", `${weather.wind.speed} m/s ${getWindDirection(weather.wind.deg)}`],
                     [VisibilityIcon, "Visibility", `${(weather.visibility / 1000).toFixed(1)} km`],
@@ -231,16 +231,24 @@ function App() {
                 </div>
 
                 {/* ---------------- STATS ROW 2 ---------------- */}
-                <div className="flex flex-wrap justify-around mt-6">
-                  {[ 
+                <div className="flex flex-wrap justify-around mt-6 text-xl">
+                  {[
                     [SunriseIcon, "Sunrise", weather.sys.sunrise],
                     [SunsetIcon, "Sunset", weather.sys.sunset],
-                  ].map(([Icon, label, time]) => (
+                  ].map(([Icon, label, timestamp]) => (
                     <div key={label} className="flex flex-col items-center m-2">
                       <Icon />
                       <p className="mt-1 font-semibold">{label}</p>
                       <p className="text-sm">
-                        {new Date(time * 1000).toLocaleTimeString("en-GB", {
+                        {/* Display date */}
+                        {new Date(timestamp * 1000).toLocaleDateString("en-GB", {
+                          weekday: "short",
+                          day: "2-digit",
+                          month: "short",
+                        })}
+                        <br />
+                        {/* Display time */}
+                        {new Date(timestamp * 1000).toLocaleTimeString("en-GB", {
                           hour: "2-digit",
                           minute: "2-digit",
                         })}
@@ -248,6 +256,7 @@ function App() {
                     </div>
                   ))}
                 </div>
+
 
                 {/* ---------------- FORECAST ---------------- */}
                 <div className="mt-8">
