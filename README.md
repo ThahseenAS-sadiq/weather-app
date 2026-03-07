@@ -1,16 +1,111 @@
-# React + Vite
+# Weather App 🌦️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **Weather Application** that provides real-time weather information for any location.
+The app displays important weather details such as temperature, humidity, wind speed, visibility, sunrise, and sunset.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# 🚀 Features
 
-## React Compiler
+* Search weather by city name
+* Detect weather using current location
+* Display temperature and weather condition
+* Show humidity, wind speed, and visibility
+* Show sunrise and sunset times
+* Responsive user interface
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+# 🖥️ Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The application can be deployed using **Vercel / Netlify** for live preview.
+
+---
+
+# ⚙️ Tech Stack
+
+Frontend
+
+* React
+* Vite
+* JavaScript
+* CSS
+
+API
+
+* OpenWeather API
+
+---
+
+# 📂 Project Structure
+
+```
+weather-app
+│
+├── public
+├── src
+│   ├── components
+│   ├── App.jsx
+│   ├── main.jsx
+│
+├── README.md
+├── package.json
+```
+
+---
+
+# 🌍 How It Works
+
+1. User enters a city name or allows location access
+2. The application sends a request to the **Weather API**
+3. API returns weather data
+4. The app displays weather details in the UI
+
+---
+
+# 💻 Installation
+
+Clone the repository
+
+```
+git clone https://github.com/ThahseenAS-sadiq/weather-app.git
+```
+
+Move into project folder
+
+```
+cd weather-app
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Run the project
+
+```
+npm run dev
+```
+
+---
+
+# 📈 Future Improvements
+
+* Hourly weather forecast
+* 7-day weather forecast
+* Weather animations
+* Dark/light theme
+* Weather map integration
+
+---
+
+# 👨‍💻 Author
+
+**Thahseen A.S**
+
+AI/ML Student | Developer
+
+LinkedIn
+https://linkedin.com/in/thahseenas2503
