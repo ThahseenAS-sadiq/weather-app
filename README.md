@@ -18,7 +18,7 @@ The app displays important weather details such as temperature, humidity, wind s
 
 # 🖥️ Live Demo
 
-The application can be deployed using **Vercel / Netlify** for live preview.
+The application can be deployed using **https://weather-app-five-lyart-51.vercel.app/** for live preview.
 
 ---
 
